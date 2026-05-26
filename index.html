@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy — Citizenship Test</title>
+    <title>Privacy Policy — Canada Citizenship Test &amp; G1</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -25,24 +25,120 @@
         .updated { color: #607D8B; font-size: 0.9em; }
         .platform-note { color: #607D8B; font-size: 0.85em; font-style: italic; margin-top: 40px; padding-top: 20px; border-top: 1px solid #E0E5EB; }
         a { color: #2D3E58; }
+        .thank-you {
+            display: none;
+            background: #D7EFD8;
+            color: #1F2C40;
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin-bottom: 24px;
+            border-left: 4px solid #4CAF50;
+        }
+        .thank-you.visible { display: block; }
+        form { margin-top: 16px; }
+        form label {
+            display: block;
+            margin-bottom: 4px;
+            color: #2D3E58;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            display: block;
+            width: 100%;
+            max-width: 500px;
+            padding: 10px 12px;
+            margin-bottom: 16px;
+            border: 1px solid #D0D7DE;
+            border-radius: 6px;
+            font-size: 1em;
+            font-family: inherit;
+            box-sizing: border-box;
+        }
+        form textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        form input:focus,
+        form textarea:focus {
+            outline: none;
+            border-color: #2D3E58;
+        }
+        form button {
+            background: #2D3E58;
+            color: white;
+            border: none;
+            padding: 10px 28px;
+            border-radius: 6px;
+            font-size: 1em;
+            font-family: inherit;
+            cursor: pointer;
+        }
+        form button:hover { background: #1F2C40; }
+        .honeypot { display: none !important; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Privacy Policy — Citizenship Test</h1>
-        <p class="updated">Last updated: May 11, 2026</p>
-        <p>This Privacy Policy describes how the Citizenship Test app ("the App"), part of the Quiz Engine platform, handles information when you use it.</p>
+        <div id="thank-you" class="thank-you">
+            <strong>Thank you!</strong> Your message has been sent.
+        </div>
+ 
+        <h1>Privacy Policy — Canada Citizenship Test &amp; G1</h1>
+        <p class="updated">Last updated: May 25, 2026</p>
+        <p>This Privacy Policy describes how the <strong>Canada Citizenship Test &amp; G1</strong> app ("the App") handles information when you use it. The App provides practice tests for the Canadian Citizenship Test and the Ontario G1 driver's knowledge test.</p>
+ 
         <h2>1. Data We Collect</h2>
-        <p><strong>The App does not collect, transmit, or share any personal data.</strong> All quiz progress, results, and preferences are stored only on your device using local storage. No data ever leaves your device.</p>
+        <p><strong>The App does not collect, transmit, or share any personal data during normal use.</strong> All quiz progress, results, and preferences are stored only on your device using local storage. Nothing is uploaded automatically.</p>
+        <p>The only exception is the <strong>optional Contact Support form</strong> inside the App. If you voluntarily fill it in and tap Send, the name, email address, and message you typed are transmitted to a third-party form-relay service (see Section 2) so the App maintainer can reply to you. The App does not access your email, name, or any device information unless you explicitly enter it into this form yourself.</p>
+ 
         <h2>2. Third-Party Services</h2>
-        <p>The App does not use any third-party analytics, advertising networks, crash reporting, or tracking services. The App makes no network requests during normal use.</p>
+        <p>The App does not use any third-party analytics, advertising networks, crash reporting, or behavioural tracking services.</p>
+        <p>The App uses a single third-party service: <strong>Web3Forms</strong> (<a href="https://web3forms.com/privacy" target="_blank" rel="noopener">privacy policy</a>) — a contact-form relay that forwards messages from the in-app Contact Support form (and from the form on this Privacy Policy page) to the maintainer's email. Web3Forms only receives data you voluntarily type into a form and submit. No data is transmitted to Web3Forms unless you press Send.</p>
+ 
         <h2>3. Children's Privacy</h2>
-        <p>The App is suitable for users of all ages. We do not knowingly collect personal information from anyone, including children under 13. Because the App collects no data, it complies with the Children's Online Privacy Protection Act (COPPA).</p>
+        <p>The App is suitable for users of all ages. We do not knowingly collect personal information from anyone, including children under 13. Because the App collects no personal data automatically, it complies with the Children's Online Privacy Protection Act (COPPA). The Contact Support form is voluntary and includes no age verification — children should ask a parent or guardian before submitting it.</p>
+ 
         <h2>4. Changes to This Policy</h2>
         <p>If we update this policy, we will publish the new version at this URL and update the "Last updated" date above.</p>
+ 
         <h2>5. Contact</h2>
-        <p>For questions about this Privacy Policy, contact: <a href="mailto:onik98657@gmail.com">onik98657@gmail.com</a></p>
-        <p class="platform-note">Citizenship Test is built on the Quiz Engine platform — a privacy-first, ad-free, no-account exam preparation framework. This Privacy Policy applies to all Quiz Engine apps.</p>
+        <p>For questions about this Privacy Policy, please use the form below. Your message will be delivered to the App maintainer through Web3Forms; your email address is not shared publicly and is used only to reply to you.</p>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="0e6100ef-ab7e-4b0d-a689-272f46c9a1cf">
+            <input type="hidden" name="subject" value="[Privacy Policy] Inquiry from website">
+            <input type="hidden" name="from_name" value="Canada Citizenship Test &amp; G1 — Privacy Page">
+            <input type="hidden" name="redirect" value="https://dmitry1937.github.io/quiz-engine-privacy/#thank-you">
+ 
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" required>
+ 
+            <label for="email">Your email</label>
+            <input type="email" id="email" name="email" required>
+ 
+            <label for="message">Your question or concern</label>
+            <textarea id="message" name="message" required></textarea>
+ 
+            <!-- Honeypot for bots -->
+            <input type="checkbox" name="botcheck" class="honeypot" tabindex="-1" autocomplete="off">
+ 
+            <button type="submit">Send</button>
+        </form>
+ 
+        <p class="platform-note">Canada Citizenship Test &amp; G1 is built on the Quiz Engine framework — a privacy-first, ad-free, no-account exam preparation platform.</p>
     </div>
+ 
+    <script>
+        // Show thank-you banner if redirected back from Web3Forms after submit
+        if (window.location.hash === '#thank-you') {
+            var box = document.getElementById('thank-you');
+            if (box) {
+                box.classList.add('visible');
+                box.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+    </script>
 </body>
 </html>
